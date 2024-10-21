@@ -1,0 +1,8 @@
+version: '3'
+services:
+  backend:
+    build: .
+    container_name: oraculo-astrology
+    name: oraculo-astrology
+    ports:
+      - 8000:8000

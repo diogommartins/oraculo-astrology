@@ -1,0 +1,1 @@
+- Generative tarot cards https://abetusk.github.io/ResonatorVoyantTarot/

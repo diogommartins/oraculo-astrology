@@ -1,0 +1,17 @@
+[project]
+name = "oraculo-astrology"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "cairosvg>=2.7.1",
+    "fastapi[standard]>=0.115.2",
+    "jupyter>=1.1.1",
+    "pydantic-settings>=2.6.0",
+    "pyswisseph>=2.10.3.2",
+    "pytz>=2024.2",
+    "ruff>=0.7.0",
+    "scour>=0.38.2",
+    "terminaltables>=3.1.10",
+]
