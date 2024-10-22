@@ -5,8 +5,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN apk add build-base linux-headers
-RUN pip install uv
-RUN uv sync
+RUN apk add build-base linux-headers \
+ && pip install uv \
+ && uv sync
 
-CMD ["uv", "run", "python", "http_api.py"]
+CMD ["uv", "run", "http_api.py"]

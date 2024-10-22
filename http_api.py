@@ -2,6 +2,7 @@ from typing import Union
 from uuid import uuid4
 
 from fastapi import FastAPI, Response
+from fastapi.responses import RedirectResponse
 from pydantic import BaseModel, Field
 import uvicorn
 from backend.astrological_subject import AstrologicalSubject
@@ -26,12 +27,7 @@ class Subject(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
-
-
-@app.get("/subject/{entity_id}")
-def read_item(item_id: int):
-    return {"entity_id": item_id, "chart": None}
+    return RedirectResponse("/docs")
 
 
 @app.post("/subject")
